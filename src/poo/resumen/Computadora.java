@@ -3,10 +3,11 @@ package poo.resumen;
 public class Computadora {
 
     String tipoCpu;
-    String capacidadMemoriaRam;
+    // Unidad de medida G
+    int capacidadMemoriaRam;
     String potenciaFuenteEnergia;
     String tipoTarjetaVideo;
-    // Unidad GB
+    // Unidad de medida GB
     int capacidadDiscoDuro;
 
     // Constructor vacio
@@ -16,7 +17,7 @@ public class Computadora {
 
     // Constructor con parametros
     public Computadora(String tipoCpu,
-                       String capacidadMemoriaRam,
+                       int capacidadMemoriaRam,
                        String potenciaFuenteEnergia,
                        String tipoTarjetaVideo,
                        int capacidadDiscoDuro) {
@@ -53,9 +54,18 @@ public class Computadora {
         }
     }
 
-    public void ejecutarProgramas(){
-        System.out.println("Ejecutar programas");
+    public boolean ejecutarProgramas(String nombrePrograma){
 
+        System.out.println("Evaluando ejecucion del programa");
+        boolean resultado;
+
+        if ( nombrePrograma.equals("Excel") && this.capacidadMemoriaRam > 8 ) {
+            resultado = true;
+        } else {
+            resultado = false;
+        }
+
+        return resultado;
     }
 
 }

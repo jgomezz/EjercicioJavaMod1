@@ -6,11 +6,20 @@ public class Aplicacion {
 
         //Computadora miPC = new Computadora();
 
-        Computadora miPC = new Computadora("Intel","32 GB",
+        Computadora miPC = new Computadora("Intel",32,
                 "300 W", "GPU",1023);
 
-        miPC.ejecutarProgramas();
+
+        // Llamadas a metodos donde se pasa u valor y se devuelve otro valor
+        boolean valorRetornado = miPC.ejecutarProgramas("Excel");
+        if (valorRetornado) {
+            System.out.println("Computadora adecuada");
+        }
+
+        // Llamadas a metodos
         miPC.almacenarDatos();
+
+        // Llamadas a metodos
         miPC.realizarCalculos();
 
     }
