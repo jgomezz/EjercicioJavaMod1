@@ -29,6 +29,12 @@ public class Computadora {
 
     public void realizarCalculos(){
         System.out.println(" Realiza calculos");
+        if(tipoTarjetaVideo.equals("GPU")) {
+            System.out.println("Puedes realizar calculos para Big Data");
+        } else {
+            System.out.println("NO puedes realizar granades caclulos");
+        }
+
     }
 
     /**

@@ -11,6 +11,7 @@ public class Aplicacion {
 
         miPC.ejecutarProgramas();
         miPC.almacenarDatos();
+        miPC.realizarCalculos();
 
     }
 }
