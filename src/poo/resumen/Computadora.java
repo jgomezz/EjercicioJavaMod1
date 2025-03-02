@@ -4,7 +4,7 @@ public class Computadora {
 
     String tipoCpu;
     String capacidadMemoriaRam;
-    int potenciaFuenteEnergia;
+    String potenciaFuenteEnergia;
     String tipoTarjetaVideo;
     String capacidadDiscoDuro;
 
@@ -16,7 +16,7 @@ public class Computadora {
     // Constructor con parametros
     public Computadora(String tipoCpu,
                        String capacidadMemoriaRam,
-                       int potenciaFuenteEnergia,
+                       String potenciaFuenteEnergia,
                        String tipoTarjetaVideo,
                        String capacidadDiscoDuro) {
         this.tipoCpu = tipoCpu;
