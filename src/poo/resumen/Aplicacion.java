@@ -7,9 +7,10 @@ public class Aplicacion {
         //Computadora miPC = new Computadora();
 
         Computadora miPC = new Computadora("Intel","32 GB",
-                "300 W", "GPU","1 T");
+                "300 W", "GPU",1023);
 
         miPC.ejecutarProgramas();
+        miPC.almacenarDatos();
 
     }
 }

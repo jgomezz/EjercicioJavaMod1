@@ -6,7 +6,8 @@ public class Computadora {
     String capacidadMemoriaRam;
     String potenciaFuenteEnergia;
     String tipoTarjetaVideo;
-    String capacidadDiscoDuro;
+    // Unidad GB
+    int capacidadDiscoDuro;
 
     // Constructor vacio
     public Computadora(){
@@ -18,7 +19,7 @@ public class Computadora {
                        String capacidadMemoriaRam,
                        String potenciaFuenteEnergia,
                        String tipoTarjetaVideo,
-                       String capacidadDiscoDuro) {
+                       int capacidadDiscoDuro) {
         this.tipoCpu = tipoCpu;
         this.capacidadMemoriaRam = capacidadMemoriaRam;
         this.potenciaFuenteEnergia = potenciaFuenteEnergia;
@@ -30,9 +31,18 @@ public class Computadora {
         System.out.println(" Realiza calculos");
     }
 
+    /**
+     *  Si la capacidad es mayor o igual  a 1 Tera, entonces
+     *  tienes un supercomputador
+     */
     public void almacenarDatos(){
         System.out.println("Almacenar datos");
 
+        if( capacidadDiscoDuro >= 1024) {
+            System.out.println("Tienes un supercomputador");
+        } else {
+            System.out.println("Te recomiendo que aumentes la capacidad de tu HHDD");
+        }
     }
 
     public void ejecutarProgramas(){
