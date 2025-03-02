@@ -28,8 +28,10 @@ public class Computadora {
     }
 
     public void realizarCalculos(){
+        String tipoTarjetaVideo = "Standard";
+
         System.out.println(" Realiza calculos");
-        if(tipoTarjetaVideo.equals("GPU")) {
+        if(this.tipoTarjetaVideo.equals("GPU")) {
             System.out.println("Puedes realizar calculos para Big Data");
         } else {
             System.out.println("NO puedes realizar granades caclulos");
@@ -44,7 +46,7 @@ public class Computadora {
     public void almacenarDatos(){
         System.out.println("Almacenar datos");
 
-        if( capacidadDiscoDuro >= 1024) {
+        if( this.capacidadDiscoDuro >= 1024) {
             System.out.println("Tienes un supercomputador");
         } else {
             System.out.println("Te recomiendo que aumentes la capacidad de tu HHDD");
