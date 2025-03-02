@@ -1,3 +1,5 @@
+package poo.p1;
+
 public class Persona {
 
     String nombres;
