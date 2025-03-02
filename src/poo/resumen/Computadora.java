@@ -6,8 +6,25 @@ public class Computadora {
     String capacidadMemoriaRam;
     int potenciaFuenteEnergia;
     String tipoTarjetaVideo;
-    String discoDuro;
+    String capacidadDiscoDuro;
 
+    // Constructor vacio
+    public Computadora(){
+        System.out.println("Inicializando PC");
+    }
+
+    // Constructor con parametros
+    public Computadora(String tipoCpu,
+                       String capacidadMemoriaRam,
+                       int potenciaFuenteEnergia,
+                       String tipoTarjetaVideo,
+                       String capacidadDiscoDuro) {
+        this.tipoCpu = tipoCpu;
+        this.capacidadMemoriaRam = capacidadMemoriaRam;
+        this.potenciaFuenteEnergia = potenciaFuenteEnergia;
+        this.tipoTarjetaVideo = tipoTarjetaVideo;
+        this.capacidadDiscoDuro = capacidadDiscoDuro;
+    }
 
     public void realizarCalculos(){
         System.out.println(" Realiza calculos");
