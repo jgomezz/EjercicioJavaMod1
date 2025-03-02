@@ -5,9 +5,11 @@ public class AplicacionPersona {
         Persona p1 =  new Persona();
 
         p1.nombres = "Alberto";
+        p1.apellido_paterno = "Campos";
 
 
         System.out.println(p1.nombres);
+        System.out.println(p1.apellido_paterno);
     }
 
 }
