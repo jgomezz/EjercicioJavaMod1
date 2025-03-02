@@ -11,9 +11,9 @@ public class Aplicacion {
 
 
         // Llamadas a metodos donde se pasa u valor y se devuelve otro valor
-        boolean valorRetornado = miPC.ejecutarProgramas("Excel");
+        boolean valorRetornado = miPC.evaluarEjecucionDelPrograma("Excel", false);
         if (valorRetornado) {
-            System.out.println("Computadora adecuada");
+            System.out.println("Computadora adecuada para el programa ");
         }
 
         // Llamadas a metodos

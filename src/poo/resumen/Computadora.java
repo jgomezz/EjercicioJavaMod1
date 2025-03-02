@@ -2,13 +2,13 @@ package poo.resumen;
 
 public class Computadora {
 
-    String tipoCpu;
+    protected String tipoCpu;
     // Unidad de medida G
-    int capacidadMemoriaRam;
-    String potenciaFuenteEnergia;
-    String tipoTarjetaVideo;
+    protected int capacidadMemoriaRam;
+    protected String potenciaFuenteEnergia;
+    protected String tipoTarjetaVideo;
     // Unidad de medida GB
-    int capacidadDiscoDuro;
+    protected int capacidadDiscoDuro;
 
     // Constructor vacio
     public Computadora(){
@@ -54,7 +54,7 @@ public class Computadora {
         }
     }
 
-    public boolean ejecutarProgramas(String nombrePrograma){
+    public boolean evaluarEjecucionDelPrograma(String nombrePrograma){
 
         System.out.println("Evaluando ejecucion del programa");
         boolean resultado;
@@ -66,6 +66,11 @@ public class Computadora {
         }
 
         return resultado;
+    }
+
+    protected boolean evaluarEjecucionDelPrograma(String nombrePrograma, boolean flagCamaleon) {
+
+        return true;
     }
 
 }
