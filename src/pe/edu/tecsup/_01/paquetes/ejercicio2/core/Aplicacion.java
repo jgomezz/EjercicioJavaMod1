@@ -6,10 +6,17 @@ public class Aplicacion {
 
     public static void main(String[] args) {
 
+        /*
         RedmiNote11 rn11 = new RedmiNote11("Xiaomi","Redmi Note 11",
                 2022, "4 Gb");
 
-        //rn11.marca = "Xiaomi";
+        System.out.println(rn11.getModelo());
+        */
+
+        RedmiNote11 rn11 = new RedmiNote11();
+        rn11.setMarca("Xiaomi");
+        rn11.setModelo("Redmi Note 11");
+
         System.out.println(rn11.getModelo());
 
     }
