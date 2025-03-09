@@ -1,6 +1,6 @@
 package pe.edu.tecsup._01.paquetes.ejercicio2.equipo;
 
-public class EquuipoMovilApple extends EquipoMovil{
+public class EquipoMovilApple extends EquipoMovil{
 
     @Override
     public String obtenerInfo() {

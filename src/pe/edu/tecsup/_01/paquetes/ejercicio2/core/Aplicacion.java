@@ -1,8 +1,9 @@
 package pe.edu.tecsup._01.paquetes.ejercicio2.core;
 
+import pe.edu.tecsup._01.paquetes.ejercicio2.equipo.EquipoMovil;
 import pe.edu.tecsup._01.paquetes.ejercicio2.equipo.EquipoMovilSamsung;
 import pe.edu.tecsup._01.paquetes.ejercicio2.equipo.EquipoMovilXiaomi;
-import pe.edu.tecsup._01.paquetes.ejercicio2.equipo.EquuipoMovilApple;
+import pe.edu.tecsup._01.paquetes.ejercicio2.equipo.EquipoMovilApple;
 import pe.edu.tecsup._01.paquetes.ejercicio2.equipo.RedmiNote11;
 
 public class Aplicacion {
@@ -21,8 +22,7 @@ public class Aplicacion {
         rn11.setModelo("Redmi Note 11");
 
         System.out.println(rn11.getModelo());
-
-
+        /*
         EquuipoMovilApple apple = new EquuipoMovilApple();
         apple.setMarca("Apple");
 
@@ -33,6 +33,37 @@ public class Aplicacion {
 
         EquipoMovilSamsung samsung = new EquipoMovilSamsung();
         samsung.setMarca("Samsung");
+        */
+
+/*
+        EquipoMovil apple = new EquipoMovilApple();
+        apple.setMarca("Apple");
+        System.out.println(apple.getMarca());
+
+        EquipoMovil xiaomi = new EquipoMovilXiaomi();
+        xiaomi.setMarca("Xiaomi");
+        System.out.println(xiaomi.getMarca());
+
+        EquipoMovil samsung = new EquipoMovilSamsung();
+        samsung.setMarca("Samsung");
+        System.out.println(samsung.getMarca());
+*/
+
+        // Define una variabla de la clase base
+        EquipoMovil movil;
+
+        // HAgo referencia a varias clases hijas
+        movil = new EquipoMovilApple();
+        movil.setMarca("Apple");
+        System.out.println(movil.getMarca());
+
+        movil = new EquipoMovilXiaomi();
+        movil.setMarca("Xiaomi");
+        System.out.println(movil.getMarca());
+
+        movil = new EquipoMovilSamsung();
+        movil.setMarca("Samsung");
+        System.out.println(movil.getMarca());
 
 
     }
