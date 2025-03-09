@@ -11,5 +11,7 @@ public class EquipoMovil {
         return " Sin implementar";
     }
 
-
+    public EquipoMovil(String marca) {
+        this.marca = marca;
+    }
 }

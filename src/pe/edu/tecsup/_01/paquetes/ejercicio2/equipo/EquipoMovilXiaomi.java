@@ -5,4 +5,5 @@ public class EquipoMovilXiaomi
 
     protected  String memoria;
 
+
 }
