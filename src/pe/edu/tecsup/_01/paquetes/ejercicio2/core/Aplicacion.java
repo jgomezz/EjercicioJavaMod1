@@ -10,7 +10,7 @@ public class Aplicacion {
                 2022, "4 Gb");
 
         //rn11.marca = "Xiaomi";
-        //System.out.println(rn11.modelo);
+        System.out.println(rn11.getModelo());
 
     }
 
