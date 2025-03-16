@@ -2,7 +2,7 @@ package pe.edu.tecsup.lab04._03.collections.list;
 
 import java.util.Objects;
 
-public class Auto {
+public class Auto implements Comparable<Auto> {
 
     protected String modelo;
     protected String nombre;
@@ -25,5 +25,18 @@ public class Auto {
     @Override
     public int hashCode() {
         return Objects.hash(modelo, nombre);
+    }
+
+    @Override
+    public String toString() {
+        return "Auto{" +
+                "modelo='" + modelo + '\'' +
+                ", nombre='" + nombre + '\'' +
+                '}';
+    }
+
+    @Override
+    public int compareTo(Auto auto) {
+        return this.nombre.compareTo(auto.nombre);
     }
 }
