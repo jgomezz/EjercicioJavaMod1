@@ -1,9 +1,0 @@
-package pe.edu.tecsup._01.paquetes.ejercicio.controlador;
-
-public class ProcesoControlador {
-
-
-
-
-
-}
